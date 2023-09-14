@@ -11,6 +11,8 @@ let age
 // Присвоение
 age = "12 лет"
 
+// ${} - позволяют вывести значение матем выражения или переменной
+
 // console.log - вывод переменной
 console.log(age)
 
@@ -22,6 +24,7 @@ age = 12
 console.log(age)
 
 // Присвоение переменной со значением в одну строку
+
 
 let one = 13
 console.log(one)
@@ -55,18 +58,24 @@ document.write(`<p>Возраст: ${age3} </p>`)
 
 // document.write - вывод в сам документ
 
+// let index = 1 для нумерации списка
+
+let index = 1
+
 document.write("<h1>Список пользователей</h1>")
 let userName1 = "Оля"
 let userAge1 = 2023-1998
-document.write(`<p><strong>${userName1}</strong>, возраст:${userAge1}</p>`)
+document.write(`<p>${index} <strong>${userName1}</strong>, возраст:${userAge1}</p>`)
 
 // только ОБРАТНЫЕ КАВЫЧКИ позволяют встраивать выражения или переменные!!!!!!!!!!!!!!!!!!!!!!
 
 let userName2 = "Саша"
 let userAge2 = 2023-1999
-document.write(`<p><strong>${userName2}</strong>, возраст:${userAge2}</p>`)
+index = index+1
+document.write(`<p>${index} <strong>${userName2}</strong>, возраст:${userAge2}</p>`)
 
 let userName3 = "Павел"
 let userAge3 = 2023-2001
-document.write(`<p><strong>${userName3}</strong>, возраст:${userAge3}</p>`)
+index = index+2
+document.write(`<p>${index} <strong>${userName3}</strong>, возраст:${userAge3}</p>`)
 
